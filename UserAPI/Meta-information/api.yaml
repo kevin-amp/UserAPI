@@ -1,0 +1,117 @@
+id:
+  providerName: admin
+  apiName: UserAPI
+  version: v1
+  id: 0
+uuid: 94bd19e2-01c9-441e-b8e5-44c22aa074de
+type: HTTP
+context: /users/v1
+contextTemplate: /users/{version}
+tags: []
+documents: []
+lastUpdated: Apr 19, 2021 10:32:30 AM
+availableTiers:
+ -
+  name: Bronze
+  displayName: Bronze
+  description: Allows 1000 requests per minute
+  requestsPerMin: 1000
+  requestCount: 1000
+  unitTime: 1
+  timeUnit: min
+  tierPlan: FREE
+  stopOnQuotaReached: true
+  quotaPolicyType: requestCount
+  rateLimitCount: 0
+ -
+  name: Gold
+  displayName: Gold
+  description: Allows 5000 requests per minute
+  requestsPerMin: 5000
+  requestCount: 5000
+  unitTime: 1
+  timeUnit: min
+  tierPlan: FREE
+  stopOnQuotaReached: true
+  quotaPolicyType: requestCount
+  rateLimitCount: 0
+ -
+  name: Silver
+  displayName: Silver
+  description: Allows 2000 requests per minute
+  requestsPerMin: 2000
+  requestCount: 2000
+  unitTime: 1
+  timeUnit: min
+  tierPlan: FREE
+  stopOnQuotaReached: true
+  quotaPolicyType: requestCount
+  rateLimitCount: 0
+ -
+  name: Unlimited
+  displayName: Unlimited
+  description: Allows unlimited requests
+  requestsPerMin: 2147483647
+  requestCount: 2147483647
+  unitTime: 0
+  timeUnit: ms
+  tierPlan: FREE
+  stopOnQuotaReached: true
+  rateLimitCount: 0
+availableSubscriptionLevelPolicies: []
+uriTemplates: []
+apiHeaderChanged: false
+apiResourcePatternsChanged: false
+status: PUBLISHED
+visibility: public
+gatewayLabels: []
+endpointSecured: false
+endpointAuthDigest: false
+transports: http,https
+advertiseOnly: false
+subscriptionAvailability: all_tenants
+corsConfiguration:
+  corsConfigurationEnabled: false
+  accessControlAllowOrigins:
+   - '*'
+  accessControlAllowCredentials: false
+  accessControlAllowHeaders:
+   - authorization
+   - Access-Control-Allow-Origin
+   - Content-Type
+   - SOAPAction
+   - apikey
+  accessControlAllowMethods:
+   - GET
+   - PUT
+   - POST
+   - DELETE
+   - PATCH
+   - OPTIONS
+endpointConfig: '{"endpoint_type":"http","sandbox_endpoints":{"url":"http:\/\/localhost:8595\/api\/users"},"production_endpoints":{"url":"http:\/\/localhost:8595\/api\/users"}}'
+responseCache: Disabled
+cacheTimeout: 300
+implementation: ENDPOINT
+authorizationHeader: Authorization
+scopes: []
+isDefaultVersion: false
+isPublishedDefaultVersion: false
+keyManagers:
+ - all
+environments:
+ - Production and Sandbox
+createdTime: "1618808547429"
+additionalProperties: {}
+monetizationProperties: {}
+isMonetizationEnabled: false
+environmentList:
+ - SANDBOX
+ - PRODUCTION
+apiSecurity: oauth2,oauth_basic_auth_api_key_mandatory,api_key
+endpoints: []
+enableSchemaValidation: false
+apiCategories: []
+enableStore: true
+accessControl: all
+rating: 0.0
+isLatest: true
