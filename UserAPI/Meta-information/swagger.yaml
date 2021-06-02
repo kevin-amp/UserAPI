@@ -39,19 +39,27 @@ paths:
          - api_key
         optional: false
     post:
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+        required: true
       responses:
-        "200":
+        '200':
           description: OK
       security:
-       -
-        default: []
+      - default: []
       x-auth-type: Application & Application User
       x-throttling-tier: Unlimited
-      x-wso2-application-security:
-        security-types:
-         - oauth2
-         - api_key
-        optional: false
+    delete:
+      responses:
+        '200':
+          description: OK
+      security:
+      - default: []
+      x-auth-type: Application & Application User
+      x-throttling-tier: Unlimited
     delete:
       responses:
         "200":
